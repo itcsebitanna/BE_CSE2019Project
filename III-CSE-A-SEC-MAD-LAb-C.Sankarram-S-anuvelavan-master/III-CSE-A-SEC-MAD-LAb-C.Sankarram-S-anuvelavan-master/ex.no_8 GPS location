@@ -1,0 +1,77 @@
+useGPS.java:
+
+package com.emergency;
+import android.app.Activity;
+import android.content.Context;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+public class UseGps extends Activity
+{
+	Button buttonSend;
+	EditText textSMS;
+	EditText textlon;
+@Override
+public void onCreate(Bundle savedInstanceState)
+{
+super.onCreate(savedInstanceState);
+setContentView(R.layout.main);
+buttonSend = (Button) findViewById(R.id.buttonSend);
+textSMS = (EditText) findViewById(R.id.editTextSMS);
+textlon = (EditText) findViewById(R.id.textlon);
+LocationManager mlocManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+LocationListener mlocListener = new MyLocationListener();
+mlocManager.requestLocationUpdates( LocationManager.GPS_PROVIDER, 0, 0, mlocListener);}
+public class MyLocationListener implements LocationListener
+{
+public void onLocationChanged(Location loc)
+{
+loc.getLatitude();
+loc.getLongitude();
+Double lat=loc.getLatitude();
+Double lon=loc.getLongitude();
+textSMS.setText(lat.toString());
+textlon.setText(lon.toString());
+}
+public void onProviderDisabled(String provider)
+{
+Toast.makeText( getApplicationContext(),"Gps Disabled",Toast.LENGTH_SHORT ).show();}
+public void onProviderEnabled(String provider)
+{
+Toast.makeText( getApplicationContext(), "Gps Enabled", Toast.LENGTH_SHORT).show();}
+public void onStatusChanged(String provider, int status, Bundle extras)
+{}}}
+
+Main_Activity.xml:
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Emergency Alert System"
+    />
+      <EditText
+        android:id="@+id/editTextSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:gravity="top" />
+   <EditText
+        android:id="@+id/textlon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top" />
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+ </LinearLayout>
