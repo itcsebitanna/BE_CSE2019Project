@@ -1,0 +1,82 @@
+Program:
+
+
+Yacc4a.y(without lex only yacc program)
+
+
+%{
+#include<stdio.h>
+#include<ctype.h>
+#include<stdlib.h>
+%}
+%token num let
+%left '+' '-'
+%left '*' '/'
+%%
+stmt: stmt '\n' {printf("\n..valid Expression..\n"); exit(0);}
+| expr
+|
+| error '\n' {printf("\n..Invalid..\n"); exit(0);}
+;
+expr: num
+| let
+| expr '+' expr
+| expr '-' expr
+| expr '*' expr
+| expr '/' expr
+| '(' expr ')'
+%%
+main()
+{
+printf("Enter an exoression to validate :");
+yyparse();
+}
+yylex()
+{
+int ch;
+while((ch=getchar())==' ');
+if(isdigit(ch))
+return num;
+if(isalpha(ch))
+return let;
+return ch;
+}
+yyerror(char *s)
+{
+printf("%s",s);
+}
+
+
+
+Yacc program
+
+
+%{
+#include<stdio.h>
+%}
+%token NUMBER ID
+%left '+' '-'
+%left '*' '/'
+%%expr:
+expr '+' expr
+|expr '-' expr
+|expr '*' expr
+|expr '/' expr
+|'-'NUMBER|'-'ID
+|'('expr')'
+|NUMBER
+|ID
+;
+%%
+main()
+{
+printf("Enter the expression\n");
+yyparse();
+printf("\nExpression is valid\n");
+exit(0);
+}
+int yyerror(char *s)
+{
+printf("\nExpression is invalid");
+exit(0);
+}
