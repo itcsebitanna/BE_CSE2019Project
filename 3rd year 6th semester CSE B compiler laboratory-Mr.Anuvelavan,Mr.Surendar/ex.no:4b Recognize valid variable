@@ -1,0 +1,83 @@
+Program: (without lex)
+
+
+%{
+#include<stdio.h>
+#include<ctype.h>
+#include<stdlib.h>
+%
+}
+%token let dig
+%%
+TERM: XTERM '\n'
+{
+printf("\nAccepted\n");
+exit(0);
+}
+|error
+{
+yyerror ("Rejected\n"); exit(0);
+};
+XTERM: XTERM let
+| XTERM dig
+| let
+;
+%%
+main()
+{
+printf("Enter a variable:");
+yyparse();
+}
+yylex()
+{
+char ch;
+while((ch=getchar())==' ');
+if(isalpha(ch))
+return let;
+if(isdigit(ch))
+return dig;
+return ch;
+}
+yyerror(char *s)
+{
+printf("%s",s);
+}
+
+
+Program: with lex and yacc
+Yacc 4b.l
+
+
+%{
+#include"y.tab.h"
+extern yylval;
+%}
+%%
+[0-9]+ {yylval=atoi(yytext); return DIGIT;}
+[a-zA-Z]+ {return LETTER;}
+[\t] ;
+\n return 0;
+. {return yytext[0];}
+%%
+Yacc 4b.y
+%{
+#include<stdio.h>
+%}
+%token LETTER DIGIT
+%%
+variable: LETTER|LETTER rest
+;
+rest: LETTER rest
+|DIGIT rest
+|LETTER|DIGIT;
+%%
+main()
+{
+yyparse();
+printf("The string is a valid variable\n");
+}
+int yyerror(char *s)
+{
+printf("this is not a valid variable\n");
+exit(0);
+}
