@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Envision</string>
+    <string name="fund">FUND TRANSFER</string>
+    <string name="req">REQUEST</string>
+    <string name="enq">ENQUIRY</string>
+    <string name="feed">FEEDBACK</string>
+    <string name="set">SETTINGS</string>
+    <string name="title_activity_payee">payee</string>
+</resources>
