@@ -1,0 +1,198 @@
+body {
+	background-color: #999999;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}.subhead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #FFCEE7;
+	height: 25px;
+}
+.subhead2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #FFDFEF;
+	height: 25px;
+}
+.heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FDE0FE;
+	height: 180px;
+	background-repeat: no-repeat;
+	background-image: url(images/Beautiful-pid-header-art.jpg);
+	background-position: right;
+	background-color: #311A22;
+}
+.txt1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.subhead a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.subhead a:hover {
+	text-decoration:none;
+	font-weight:bold;
+	color: #FFFF99;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF0099;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+.box {
+	padding: 20px;
+	height: 400px;
+	width: 600px;
+	border: 1px solid #6E0000;
+	overflow: auto;
+}
+.newlink
+{
+font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #990000;
+}
+.newlink a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.newlink a:hover {
+	text-decoration: underline;
+	color: #FFFF99;
+}.txt2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFF99;
+}
+.border2 {
+	border: 1px solid #893600;
+}
+.txt3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FF0066;
+}
+.txt4 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #009900;
+}
+.hd1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	font-weight: bold;
+	color: #000000;
+	height: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+}
+.bg2 {
+	font-weight: bold;
+	color: #000000;
+	background-color: #CEEFFF;
+}
+.bg3
+{
+	color:#666666;
+	background-color: #F0F0F0;
+
+}
+
+
+
+#menu {
+	height: 32px;
+	/*background: url(images/menu4.jpg) repeat-x;*/
+	background-color:#FFCEE7;
+	width: 100%;
+	padding-left: 10px;
+	
+	margin: 0;
+	padding: 0;
+	z-index: 30;
+}
+#menu li {
+	display:inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+#menu li a {
+	width: 140px;
+	height: 24px;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 6px;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #000000;
+	
+	display: block;
+	margin: 0 1px 0 0;
+
+}
+#menu li a:hover {
+	/*background: url(images/menu_r3.jpg) repeat-x;*/
+	background-color:#FF99CC;
+
+}
+#menu div
+{
+	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	border: 0px solid #000000;
+	background-color:#990000;
+}
+#menu div a
+{
+	position: relative;
+	display: block;
+	margin: 0;
+	width:150px;
+	text-align: left;
+	text-decoration: none;
+	color:#000000;
+	background-color:#FFCEE7;
+	font-size: 1.1em;
+}
+#menu div a:hover
+{
+color:#000000;
+background-color:#FF99CC;
+font-size: 1.1em;
+}
