@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>PREDICTION</h2>
+
+
+<br>
+
+<table id="t01">
+  <tr>
+    <th>Output1</th>
+    <th>Output2</th>
+    <th>Output3</th>
+    <th>Output4</th> 
+   
+  </tr>
+
+  <tr>
+
+{% for item in name %}</tr>
+
+
+ <tr>  {% for elem in item %}
+<td>{{ elem }}</td>
+  {% endfor %}
+
+{% endfor %}
+  </tr>
+ </table><br>
+<center>
+.<br>
+.<br>
+.<br>
+.<br>
+.<br></center>
+<table>
+ <tr>
+
+{% for item in out %}</tr>
+
+
+ <tr>  {% for elem in item %}
+<td>{{ elem }}</td>
+  {% endfor %}
+
+{% endfor %}
+  </tr>
+
+</table>
+<form method="POST" action="/new">
+<center><input type="submit" value="Submit"></center>
+</form>
+</body>
+</html>
