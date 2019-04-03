@@ -1,0 +1,61 @@
+ Time 	 Node 	 Sender/Receiver 	 Action Performed 	 LOOP 	 COLLISION 	 TTL
+10.000000000 	 0 	 Application layer Sender 	 Route Request 	 0 	 0 	 0
+ 10.000115000  	 0 	 MAC layer Sender 	 Bit/Frame Foward 	 0 	 0 	 0
+ 10.042959818  	 0 	 MAC layer Receiver 	 Ack Received 	 0 	 0 	 0
+ 10.014464443  	 1 	 MAC layer Receiver 	 Packets received as Bit/Frames  	 0 	 0 	 0
+ 10.014489443  	 1 	 Network layer Receiver 	 Bits/frames Received as packets 	 0 	 0 	 0
+ 10.014555088 	 1 	 MAC layer Receiver 	 Queue length exceed packet dropped 	 1 	 0 	 0
+ 10.014554881 	 2 	 MAC layer Sender 	 Packet dropped 	 1 	 0 	 0
+ 10.015402881 	 2 	 MAC layer Sender 	 Packet dropped 	 1 	 1 	 0
+ 117.054233996 	 2 	 Network layer Sender 	 Packet dropped 	 1 	 1 	 1
+ 10.007431652  	 3 	 MAC layer Receiver 	 Packets received as Bits/Frames  	 0 	 0 	 0
+ 10.008398041  	 3 	 Network layer Sender 	 Bits/Frames forwarded as packets 	 0 	 0 	 0
+ 10.009032987  	 3 	 Network layer Receiver 	 Bits/frames received as packets 	 0 	 0 	 0
+ 10.007431504  	 4 	 MAC layer Receiver 	 Packets received as bits/frames 	 0 	 0 	 0
+ 10.008594586  	 4 	 Network layer Sender 	 Bits/frames are forwarded as packets 	 0 	 0 	 0
+ 10.008594586  	 4 	 MAC layer Receiver 	 packets are received as bits/frames 	 0 	 0 	 0
+ 10.014464486  	 5 	 MAC layer Receiver 	 packets are received as bits/frames 	 0 	 0 	 0
+ 10.014489486  	 5 	 Network layer Receiver 	 bits/frames received as packets 	 0 	 0 	 0
+ 10.016725546  	 5 	 MAC layer Receiver 	 Packets received as frames/bits 	 0 	 0 	 0
+ 10.007431430  	 6 	 MAC layer Receiver 	 Packets received as frames/bits 	 0 	 0 	 0
+ 10.007456430  	 6 	 Network layer Receiver 	 Frames/bits received as packets 	 0 	 0 	 0
+ 10.008159375  	 6 	 MAC layer Sender 	 Packets are forwarded as frames/bits 	 0 	 0 	 0
+ 10.106346849  	 7 	 MAC layer Sender 	 Route Packets dropped 	 1 	 0 	 0
+ 10.618445525  	 7 	 Network layer Receiver 	 Route Packets dropped 	 1 	 1 	 0
+ 10.694534747  	 7 	 MAC layer Sender 	 Route packets dropped 	 1 	 1 	 1
+ 10.012287224  	 8 	 MAC layer Receiver 	 Route packets dropped 	 0 	 0 	 0
+ 10.012312224  	 8 	 Network layer Receiver 	 Frames/bits received as packets 	 0 	 0 	 0
+ 10.012312224  	 8 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.012287150  	 9 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.012312150  	 9 	 Network layer Receiver 	 Frames/bits are received as packets 	 0 	 0 	 0
+ 10.016725404  	 9 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.003113293  	 10 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.007456013  	 10 	 Network layer Receiver 	 Frames/bits are received as packets 	 0 	 0 	 0
+ 10.011303054  	 10 	 Network layer Sender 	 Frames/bits are forwarded as packets 	 0 	 0 	 0
+ 10.007431253  	 11 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.007456253  	 11 	 Network layer Receiver 	 Frames/bits are received as packets 	 0 	 0 	 0
+ 10.014489083  	 11 	 Network layer Receiver 	 Frames/bits are received as packets 	 0 	 0 	 0
+ 10.007431517  	 12 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.009007800  	 12 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.009950850  	 12 	 Network layer Receiver 	 Frames/bits are received as packets 	 0 	 0 	 0
+ 10.014554861  	 13 	 MAC layer Sender 	 Route Packets dropped 	 1 	 0 	 0
+ 10.015402861  	 13 	 MAC layer Sender 	 Route packets dropped 	 1 	 1 	 0
+ 10.011303054  	 13 	 Network layer Sender 	 Frames/bits are forwarded as packets 	 1 	 1 	 0
+ 10.007431268  	 14 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.007456268  	 14 	 Network layer Receiver 	 Frames/bits are received as packets 	 0 	 0 	 0
+ 10.009097722  	 14 	 Network layer Sender 	 Frames/bits are forwarded as packets 	 0 	 0 	 0
+ 10.007431554  	 15 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.009204606  	 15 	 Network layer Sender 	 Frames/bits are forwarded as packets 	 0 	 0 	 0
+ 10.010155652  	 15 	 MAC layer Sender 	 Packets are forwarded as frames/bits 	 0 	 0 	 0
+ 10.014554902  	 16 	 MAC layer Receiver 	 Route Packets dropped 	 1 	 0 	 0
+ 10.015402902  	 16 	 Network layer Receiver 	 Route Packets dropped 	 1 	 1 	 0
+ 10.027752572  	 16 	 Network layer Receiver 	 Frames/bits are received as packets 	 1 	 1 	 0
+ 10.007431534  	 17 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.007456534  	 17 	 Network layer Receiver 	 Frames/bits are received as packets 	 0 	 0 	 0
+ 10.011693101  	 17 	 Network layer Sender 	 Frames/bits are forwarded as packets 	 0 	 0 	 0
+ 10.009032652  	 18 	 Network layer Receiver 	 Frames/bits are received as packets 	 0 	 0 	 0
+ 10.009925713  	 18 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.013485692  	 18 	 MAC layer Receiver 	 Packets are received as frames/bits 	 0 	 0 	 0
+ 10.014554639  	 19 	 MAC layer Receiver 	 Route packets dropped 	 1 	 0 	 0
+ 10.013510749  	 19 	 MAC layer Receiver 	 Frames/bits/route packets dropped 	 1 	 1 	 0
+ 10.618094444  	 19 	 MAC layer Sender 	 Frames/bits/route packets dropped 	 1 	 1 	 1
