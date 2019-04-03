@@ -1,0 +1,6 @@
+IP_address,response_time,mac_id,remarks
+192.168.1.45,0.45ms,10.4A.5B.40,Yes
+192.168.1.89,0.88ms,4A.8B.1A.15,yes
+192.168.1.27,1.3ms,5B.6A.C5.76,no
+192.168.1.04,1.2ms,15.B4.B2.13,no
+192.168.1.61,0.68ms,25.A8.B6.A2,yes
