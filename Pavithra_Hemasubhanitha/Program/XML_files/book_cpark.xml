@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wheat"
+    android:orientation="vertical" >
+    
+<TextView
+    android:id="@+id/Txtbookbussmsds"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/chocolate"
+    android:gravity="center"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:text="Book Your Parking"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@color/seashell" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Cmd1"
+            android:layout_width="100dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="10px"
+            android:layout_weight="0.50"
+            android:text="P1" />
+
+        <Button
+            android:id="@+id/Cmd2"
+            android:layout_width="100dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="10px"
+            android:layout_weight="0.47"
+            android:text="P2" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Cmd3"
+            android:layout_width="100dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="10px"
+            android:layout_weight="0.50"
+            android:text="P3" />
+
+        <Button
+            android:id="@+id/Cmd4"
+            android:layout_width="100dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="10px"
+            android:layout_weight="0.47"
+            android:text="P4" />
+
+    </LinearLayout>
+ </LinearLayout>
+ 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Cmd5"
+            android:layout_width="100dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="10px"
+            android:layout_weight="0.50"
+            android:text="P5" />
+
+        <Button
+            android:id="@+id/Cmd6"
+            android:layout_width="100dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="10px"
+            android:layout_weight="0.47"
+            android:text="P6" />
+
+    </LinearLayout>
+ </LinearLayout>
+</LinearLayout>

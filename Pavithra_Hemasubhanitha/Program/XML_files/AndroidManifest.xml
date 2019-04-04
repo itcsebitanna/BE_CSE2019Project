@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.parking_vehicles"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.parking_vehicles.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.AdminLogin"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.AdminMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.LaneDtlsMaster"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.LaneDtlsMasterB"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.List_CarPark_Lane"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.List_BikePark_Lane"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.mainpage"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.reg"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.UserLogin"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.UserMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.viewusers"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.BookCPark"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.PayCPark"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.PayBPark"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.BookBPark"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.viewbookadmin"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.viewbikebookadmin"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.viewbikebookuser"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parking_vehicles.viewbookuser"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

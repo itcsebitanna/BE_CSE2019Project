@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<TextView
+        android:id="@+id/TxtVBDStudvc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chocolate"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:text="View user Booking Summary"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/seashell" />
+    <ListView
+        android:id="@+id/listView2VUAM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>

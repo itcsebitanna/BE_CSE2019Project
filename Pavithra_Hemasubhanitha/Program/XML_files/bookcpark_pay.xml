@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TxtRRegCRbookbuspay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chocolate"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:text="Pay for Booking"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/seashell" />
+
+    <EditText
+        android:id="@+id/TxtCardNoBP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Card Number"
+        android:inputType="textPersonName"  >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/TxtCardNameBP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Card Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/TxtCVVBP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CVV Number"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/CmdSubBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.52"
+            android:text="Pay and Confirm"
+			    android:background="@color/darkolivegreen"
+                android:textColor="@color/azure" 
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/CmdBackBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.52"
+            android:background="@color/darkolivegreen"
+            android:text="Back"
+            android:textColor="@color/azure" />
+
+    </LinearLayout>
+
+</LinearLayout>

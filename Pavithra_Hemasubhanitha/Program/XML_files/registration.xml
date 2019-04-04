@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TxtRRegCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chocolate"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:text="User Registration"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/seashell" />
+
+    <EditText
+        android:id="@+id/TxtCIDCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:hint="User-ID"
+        android:inputType="number" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/TxtCNameCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"  >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/TxtUNCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/TxtPwdCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    
+    <EditText
+        android:id="@+id/TxtVNOCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Vehicle Number"
+        android:inputType="textPersonName" />
+    
+    <EditText
+        android:id="@+id/TxtMbCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/TxtMailCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="E-Mail-ID"
+        android:inputType="textWebEmailAddress" />
+
+    <EditText
+        android:id="@+id/TxtAddressCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName|textPostalAddress"
+        android:textAlignment="textStart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/CmdSubCR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.52"
+            android:text="Submit"
+			    android:background="@color/darkolivegreen"
+                android:textColor="@color/azure" 
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/CmdBackCR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.52"
+            android:background="@color/darkolivegreen"
+            android:text="Back"
+            android:textColor="@color/azure" />
+
+    </LinearLayout>
+
+</LinearLayout>
